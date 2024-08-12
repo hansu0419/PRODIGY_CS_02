@@ -1,11 +1,11 @@
 /* General styles */
 :root {
-    --dark1: #6b8e9b;
-    --accent1: #660167;
-    --accent2: #ff4081;
+    --dark1: #201E43;
+    --accent1: #EEEEEE;
+    --accent2: #134B70;
     --light2: #EAEAF0;
     --light1: #f5f5f5;
-    --mono: #670034;
+    --mono: #508C9B;
     --image: #1d1339;
     color: white;
     background-color: var(--dark1);
@@ -42,44 +42,10 @@ body {
     flex-direction: column;
 }
 
-#dropzone {
-    margin: 20px;
-    max-width: 400px;
-    width: 100%;
-    background: var(--light1);
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
-}
-
-#dropArea {
-    border: 2px dashed #ccc; 
-    padding: 20px;
-    text-align: center;
-}
-
-#image-container {
-    display: flex;
-    flex-direction: column;
-    border: 2px var(--accent2);
-    padding: 20px;
-    text-align: center;
-    background-color: var(--light1);
-    border-radius: 100px;
-}
-
-#image-container img {
-    max-width: 100%;
-    max-height: 200px;
-    min-height: 100px;
-    object-fit: cover;
-    cursor: pointer; /* Added cursor pointer for clickable image */
-}
-
 button {
     padding: 10px 20px;
     background-color: var(--accent1);
-    color: white;
+    color: var(--mono);
     border: none;
     cursor: pointer;
     font-size: 18px;
@@ -117,7 +83,7 @@ input[type="number"] {
 .file-label {
     display: inline-block;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--mono);
     background: var(--accent1);
     text-align: center;
     padding: 15px 40px;
@@ -161,16 +127,30 @@ svg text {
 	font-size: 3rem;
 }
 @keyframes stroke {
-	0%   {
-		fill: rgba(102,1,103,0); stroke: rgba(102,1,103,1);
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
-	}
-	70%  {fill: rgba(102,1,103,0); stroke: rgba(102,1,103,1); }
-	80%  {fill: rgba(102,1,103,0); stroke: rgba(102,1,103,1); stroke-width: 3; }
-	100% {
-		fill: rgba(102,1,103,1); stroke: rgba(102,1,103,0);
-		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-	}
+    0% {
+        fill: rgba(80, 140, 155, 0); /* Transparent fill using rgba */
+        stroke: #508C9B;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+    70% {
+        fill: rgba(80, 140, 155, 0); /* Transparent fill using rgba */
+        stroke: #508C9B;
+    }
+    80% {
+        fill: rgba(80, 140, 155, 0); /* Transparent fill using rgba */
+        stroke: #508C9B;
+        stroke-width: 3;
+    }
+    100% {
+        fill: #508C9B;
+        stroke: rgba(80, 140, 155, 0); /* Transparent stroke using rgba */
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
 }
 
-.wrapper {background-color: #6B8E9B};
+
+.wrapper {background-color: #201E43};
