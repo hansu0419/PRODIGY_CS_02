@@ -22,3 +22,15 @@ Install the required Python packages by running:
 ```bash
 $ pip install flask
 $ pip install pillow
+```
+
+After running the above command, open the program by clicking [here](http://127.0.0.1:9090/).
+
+## DEMO
+### Encrypt
+![PRODIGY_CS_02_encrypt](https://github.com/user-attachments/assets/99b488e2-5da4-4dcf-8f84-e27694f41e66)
+
+
+### Decrypt
+![PRODIGY_CS_02_decrypt](https://github.com/user-attachments/assets/f7d629a6-1fb1-49fe-a6f1-f6394451d560)
+
