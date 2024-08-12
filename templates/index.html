@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static/style.css">
+    <title>Image Encryptor/Decryptor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <svg>
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                Pixel Manipulation
+            </text>
+        </svg>
+    </div>
+    <div class="index_body">
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="file" class="file-label">Select Image</label>
+            <input type="file" id="file" name="file" accept="image/*" required><br><br>
+
+            <label for="seed" class="seed-label">Seed</label>
+            <input type="number" id="seed" name="seed" required><br><br>
+            
+            <button type="submit" name="action" value="Encrypt">Encrypt</button>
+            <button type="submit" name="action" value="Decrypt">Decrypt</button>
+        </form>
+    </div>
+</body>
+</html>
